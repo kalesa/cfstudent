@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   get 'about', to: 'static_pages#about'
   get 'contact', to: 'static_pages#contact'
-  get 'products', to: 'static_pages#products'
-
   get 'static_pages/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
