@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   resources :products
   resources :object_names
   get 'about', to: 'static_pages#about'
-  
   get 'contact', to: 'static_pages#contact'
   get 'static_pages/index'
 
