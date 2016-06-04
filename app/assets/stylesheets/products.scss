@@ -2,19 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-label {
-  font-size: 15px;
-  text-align: left;
-}
-
-.btn-default {
-  color: white;
-  background-color: #00CC00;
-  border-color: #00CC00;
-}
-
 .btn-primary {
   color: white;
   background-color: #00CC00;
   border-color: #00CC00;
 }
+
+.product-img { 
+  height: 300px; 
+  width: 500px; 
+} 
