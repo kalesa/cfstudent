@@ -11,6 +11,10 @@ html {
   min-height: 100%;
 }
 
+header {
+  background-color: #efefef;
+}
+
 body {
   font: 100% Verdana, Geneva, Sans-Serif; 
   background-color: #efefef;
@@ -24,11 +28,11 @@ h1 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
-  color: rgba(0, 102, 51, 1);
+  color: rgba(0, 204, 0, 1);
 }
 
 #custom-bootstrap-menu.navbar-default {
@@ -38,47 +42,52 @@ p {
   border-radius: 4px;
 }
 
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-  color: rgba(0, 102, 51, 1);
-  background-color: rgba(248, 248, 248, 0);
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(0, 204, 0, 1);
 }
-
+#custom-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: rgba(88, 88, 88, 1);
+    border-width: 1px;
+    border-radius: 4px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(88, 88, 88, 1);
+}
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(0, 204, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 204, 0, 1);
 }
-
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(0, 204, 0, 1);
+    color: rgba(0, 204, 0, 1);
+    background-color: rgba(112, 112, 112, 1);
 }
-
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
-  border-color: #00cc00;
+    border-color: #707070;
 }
-
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-  background-color: #00cc00;
+    background-color: #707070;
 }
-
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-  background-color: #00cc00;
+    background-color: #707070;
 }
-
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-  background-color: #f8f8f8;
+    background-color: #585858;
 }
 
-.footer p {
-  margin: 20px 0;
+.footer {
   font-size: 15px;
-  color: #006633;
-  text-align: left;
+  color: #00CC00;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #585858;
 }
-
-

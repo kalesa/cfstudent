@@ -2,6 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.form-group label {
+  font-size: 15px;
+}
+
+a {
+  font-size: 15px;
+}
+
+#product, 
+h3, 
+#link_product,
+#show_product {
+  text-align: left;
+}
+
+#product {
+  font-size: 15px;
+}
+
 .btn-primary {
   color: white;
   background-color: #00CC00;
@@ -9,6 +28,6 @@
 }
 
 .product-img { 
-  height: 300px; 
-  width: 500px; 
+  height: 250px; 
+  width: 400px; 
 } 
