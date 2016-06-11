@@ -3,15 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 h2 {
-  color: #000099;
+  color: #FF6347;
 }
 
 .carousel-caption {
   font-size: 15px;
   color: #000099;
 }
-
-
 
 .listing_products,
 .featured_product {
@@ -23,9 +21,17 @@ h2 {
   font-size: 15px;
 }
 
+label {
+  color: white;
+}
+
 a {
   font-size: 13px;
   color: #000099;
+}
+
+a:visited {
+  color: white;
 }
 
 #container_product {
@@ -43,8 +49,18 @@ h3,
   color: white;
 }
 
+#product_description.form-control, 
+#product_color.form-control,
+#product_price.form-control {
+  color: black;
+}
+
 #product {
   font-size: 15px;
+}
+
+h3 {
+  color: #FF6347;
 }
 
 .btn-primary {

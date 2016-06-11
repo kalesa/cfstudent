@@ -11,9 +11,6 @@ html {
   min-height: 100%;
 }
 
-header {
-  background-color: #efefef;
-}
 
 body {
   font: 100% Verdana, Geneva, Sans-Serif; 
@@ -24,11 +21,12 @@ body {
 }
   
 h1 {
-  color: #000099;
+  color: #FF6347;
 }
 
 p {
   font-size: 15px;
+  color: white;
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
@@ -72,7 +70,6 @@ p {
 
 .footer {
   font-size: 15px;
-  color: #000099;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -83,4 +80,5 @@ p {
 
 .footer p {
   margin-top: .5cm;
+  color: #000099;
 }
