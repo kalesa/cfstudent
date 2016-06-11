@@ -1,17 +1,15 @@
-<div class="container-fluid" id="container_product">
-  <p id="notice"><%= notice %></p>
-<header class="product_listing">
+<div class="container" id="container_product">
+<div class="row">
+<p id="notice"><%= notice %></p>
   <h1>Product listing</h1>
-</header>
-  <%= render 'product' %>
+  <center><button type="button" class="btn btn-default">
+  <%= link_to 'New Product', new_product_path %>
+  </button></center>
+<%= render @products %>
 
-<br>
-
-<button type="button" class="btn btn-default">
-<%= link_to 'New Product', new_product_path %>
-</button>
-
-</div><!--END container-->
+ 
+</div> 
+</div>
 
 <!--
 <div class="container" id="container_product">
