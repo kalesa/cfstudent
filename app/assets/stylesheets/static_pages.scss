@@ -17,14 +17,14 @@ header {
 
 body {
   font: 100% Verdana, Geneva, Sans-Serif; 
-  background-color: #efefef;
+  background-color: #383838;
   text-align: center;
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
   
 h1 {
-  color: #006633;
+  color: #000099;
 }
 
 p {
@@ -32,59 +32,53 @@ p {
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 153, 1);
 }
 #custom-bootstrap-menu.navbar-default {
-    font-size: 14px;
-    background-color: rgba(51, 153, 0, 1);
-    background: -webkit-linear-gradient(top, rgba(51, 153, 51, 1) 0%, rgba(51, 153, 0, 1) 100%);
-    background: linear-gradient(to bottom, rgba(51, 153, 51, 1) 0%, rgba(51, 153, 0, 1) 100%);
-    border-width: 1px;
-    border-radius: 4px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 1);
+  border-width: 1px;
+  border-radius: 4px;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(48, 48, 48, 1);
+  color: rgba(0, 0, 153, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(0, 153, 51, 1);
-    background: -webkit-linear-gradient(top, rgba(11, 115, 53, 1) 0%, rgba(0, 153, 51, 1) 100%);
-    background: linear-gradient(to bottom, rgba(11, 115, 53, 1) 0%, rgba(0, 153, 51, 1) 100%);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 153, 1);
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(0, 204, 51, 1);
-    background: -webkit-linear-gradient(top, rgba(51, 153, 0, 1) 0%, rgba(0, 204, 51, 1) 100%);
-    background: linear-gradient(to bottom, rgba(51, 153, 0, 1) 0%, rgba(0, 204, 51, 1) 100%);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 153, 1);
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #00cc33;
+  border-color: #000099;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #00cc33;
+  background-color: #000099;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #00cc33;
+  background-color: #000099;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #339900;
+  background-color: #ffffff;
 }
 
 .footer {
   font-size: 15px;
-  color: white;
+  color: #000099;
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #009900;
+  background-color: white;
 }
 
 .footer p {

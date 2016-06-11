@@ -2,7 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.product_listing {
+h2 {
+  color: #000099;
+}
+
+.carousel-caption {
+  font-size: 15px;
+  color: #000099;
+}
+
+
+
+.listing_products,
+.featured_product {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -12,7 +24,8 @@
 }
 
 a {
-  font-size: 15px;
+  font-size: 13px;
+  color: #000099;
 }
 
 #container_product {
@@ -26,6 +39,8 @@ h3,
 #link_product,
 #show_product {
   text-align: left;
+  font-size: 14px;
+  color: white;
 }
 
 #product {
@@ -33,9 +48,9 @@ h3,
 }
 
 .btn-primary {
-  color: white;
-  background-color: #00CC00;
-  border-color: #00CC00;
+  color: #000099;
+  background-color: white;
+  border-color: #000099;
 }
 
 .product-img { 
