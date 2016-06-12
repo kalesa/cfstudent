@@ -1,8 +1,7 @@
-<!--
 <div class="container" id="container_product">
   <div class='row'>
   <% @products.each do |product| %>
--->
+
   <div class="col-sm-6 col-md-4">
     <%= image_tag(product.image_url, class: "img-responsive product-img") %>
       <h3><strong><%= product.name %></strong></h3>
@@ -16,7 +15,5 @@
         </p>
     </div><!--END col-->
     <% end %>
-  <!--
   </div>
 </div>
--->
