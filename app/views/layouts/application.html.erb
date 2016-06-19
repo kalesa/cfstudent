@@ -13,19 +13,29 @@
   <%= csrf_meta_tags %>
   
 </head>
+
 <body>
 <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
     <div class="container">
-        <div class="navbar-header"><a class="navbar-brand" href="/">Iza Bike</a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+        <%= image_tag("iza_logo.jpg", class: "img-responsive my-image", size:"60x60") %>
+        </a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
         </div><!--END navbar header-->
         <div class="collapse navbar-collapse navbar-menubuilder">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/">Home</a></li>
+              <!--<li><a href="/about">About</a></li>-->
+              <li><%= link_to 'About', static_pages_about_path %></li>
+              <li><a href="/products">Products</a></li>
+              <!--<li><a href="/contact">Contact Us</a></li>-->
+              <li><%= link_to 'Contact', static_pages_contact_path %></li>
             </ul><!--END navbar right-->
         </div><!--END collapse navbar-->
     </div><!--END container-->

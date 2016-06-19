@@ -2,9 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h2,
-h3 {
+h2 {
   color: #FF6347;
+}
+
+h3 {
+   color: #FF6347;
+   text-align: left;
+   font-size: 16px;
 }
 
 .carousel-caption {
@@ -36,8 +41,7 @@ a {
 
 #product_description,
 #product_color, 
-#product_price,
-h3, 
+#product_price, 
 #link_product,
 #show_product {
   text-align: left;
