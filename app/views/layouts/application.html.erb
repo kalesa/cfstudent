@@ -19,7 +19,7 @@
     <div class="container">
         <div class="navbar-header">
         <a class="navbar-brand" href="/">
-        <%= image_tag("iza_logo.jpg", class: "img-responsive my-image", size:"60x60") %>
+        <%= image_tag("iza_logo.jpg", class: "img-responsive my-image", size:"40x40") %>
         </a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
               <span class="sr-only">Toggle navigation</span>
@@ -27,8 +27,10 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+      
         </div><!--END navbar header-->
         <div class="collapse navbar-collapse navbar-menubuilder">
+ 
             <ul class="nav navbar-nav navbar-right">
               <li><a href="/">Home</a></li>
               <!--<li><a href="/about">About</a></li>-->
@@ -37,6 +39,15 @@
               <!--<li><a href="/contact">Contact Us</a></li>-->
               <li><%= link_to 'Contact', static_pages_contact_path %></li>
             </ul><!--END navbar right-->
+
+    <%= form_tag("/products", method: "get", class: "navbar-form navbar-right") do %>
+    <div class="form-group">
+      <%= label_tag(:q, "") %>
+      <%= text_field_tag(:q, "", placeholder: "Search", class: "form-control") %>
+      <%= submit_tag("Search", class: "btn btn-default") %>
+    </div>
+    <% end %>
+
         </div><!--END collapse navbar-->
     </div><!--END container-->
 </div><!--END bootstrap menu-->
