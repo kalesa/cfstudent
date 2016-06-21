@@ -11,9 +11,8 @@ html {
   min-height: 100%;
 }
 
-
 body {
-  font: 100% Verdana, Geneva, Sans-Serif; 
+  font: Verdana, Geneva, Sans-Serif; 
   background-color: #383838;
   text-align: center;
   /* Margin bottom by footer height */
@@ -34,50 +33,47 @@ a:visited {
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
-  color: rgba(0, 0, 153, 1);
+  color: rgba(230, 39, 57, 1);
 }
-
 #custom-bootstrap-menu.navbar-default {
-  font-size: 14px;
-  background-color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  background-color: rgba(225, 232, 240, 1);
   border-width: 1px;
   border-radius: 4px;
 }
-
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-  color: rgba(0, 0, 153, 1);
-  background-color: rgba(255, 255, 255, 1);
+  color: rgba(230, 39, 57, 1);
+  background-color: rgba(225, 232, 240, 1);
 }
-
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(0, 0, 153, 1);
+  color: rgba(225, 232, 240, 1);
+  background-color: rgba(230, 39, 57, 1);
 }
-
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(0, 0, 153, 1);
+  color: rgba(225, 232, 240, 1);
+  background-color: rgba(230, 39, 57, 1);
 }
-
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
-  border-color: #000099;
+  border-color: #e62739;
 }
-
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-  background-color: #000099;
+  background-color: #e62739;
 }
-
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-  background-color: #000099;
+  background-color: #e62739;
 }
-
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-  background-color: #ffffff;
+  background-color: #e1e8f0;
+}
+
+input.btn.btn-default {
+  color: #e62739;
+  background-color: #e1e8f0;
 }
 
 .footer {
@@ -87,10 +83,11 @@ a:visited {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: white;
+  background-color: #e1e8f0;
 }
 
 .footer p {
+  font-family: Impact, Charcoal, sans-serif;
   margin-top: .5cm;
-  color: #000099;
+  color: #e62739;
 }
