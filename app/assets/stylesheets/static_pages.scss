@@ -35,37 +35,54 @@ a:visited {
 #custom-bootstrap-menu.navbar-default .navbar-brand {
   color: rgba(230, 39, 57, 1);
 }
+
+a.navbar-brand {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 20px;
+}
+
 #custom-bootstrap-menu.navbar-default {
-  font-size: 16px;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
   background-color: rgba(225, 232, 240, 1);
   border-width: 1px;
   border-radius: 4px;
 }
+
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+  font-family: Impact, Charcoal, sans-serif;
+  letter-spacing: 2px;
   color: rgba(230, 39, 57, 1);
   background-color: rgba(225, 232, 240, 1);
 }
+
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
   color: rgba(225, 232, 240, 1);
   background-color: rgba(230, 39, 57, 1);
 }
+
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
   color: rgba(225, 232, 240, 1);
   background-color: rgba(230, 39, 57, 1);
 }
+
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
   border-color: #e62739;
 }
+
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
   background-color: #e62739;
 }
+
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
   background-color: #e62739;
 }
+
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
   background-color: #e1e8f0;
@@ -74,6 +91,10 @@ a:visited {
 input.btn.btn-default {
   color: #e62739;
   background-color: #e1e8f0;
+}
+
+.panel-body p {
+  color: #FF6347;
 }
 
 .footer {
@@ -88,6 +109,7 @@ input.btn.btn-default {
 
 .footer p {
   font-family: Impact, Charcoal, sans-serif;
+  letter-spacing: 2px;
   margin-top: .5cm;
   color: #e62739;
 }

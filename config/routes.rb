@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get 'static_pages/about'
   get 'static_pages/contact'
   get 'static_pages/index'
+
+  post 'static_pages/thank_you'
+  
   #get 'static_pages/landing_page'
 
   # The priority is based upon order of creation: first created -> highest priority.
