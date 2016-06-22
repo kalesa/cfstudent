@@ -31,12 +31,21 @@
         <div class="collapse navbar-collapse navbar-menubuilder">
  
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/">Home</a></li>
+              <!--<li><a href="/">Home</a></li>-->
+              <li><%= link_to 'Home', root_path %></li>
               <!--<li><a href="/about">About</a></li>-->
               <li><%= link_to 'About', static_pages_about_path %></li>
-              <li><a href="/products">Products</a></li>
+              <!--<li><a href="/products">Products</a></li>-->
+              <li><%= link_to 'Products', products_path %></li>
               <!--<li><a href="/contact">Contact Us</a></li>-->
               <li><%= link_to 'Contact', static_pages_contact_path %></li>
+              <li>
+                <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                <% else %>
+                <%= link_to('Login', new_user_session_path) %>
+                <% end %>
+              </li>
             </ul><!--END navbar right-->
 
     <%= form_tag("/products", method: "get", class: "navbar-form navbar-right") do %>
@@ -50,7 +59,8 @@
         </div><!--END collapse navbar-->
     </div><!--END container-->
 </div><!--END bootstrap menu-->
-
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 <%= yield %>
 
 <footer class="footer">
