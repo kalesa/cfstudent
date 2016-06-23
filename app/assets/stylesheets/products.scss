@@ -7,9 +7,15 @@ h2 {
 }
 
 h3 {
-   color: #FF6347;
-   text-align: left;
-   font-size: 16px;
+  color: #FF6347;
+  text-align: left;
+  font-size: 16px;
+}
+
+h4 {
+  color: #FF6347;
+  text-align: center;
+  font-size: 16px;
 }
 
 .carousel-caption {
@@ -33,6 +39,10 @@ label {
 
 a {
   font-size: 13px;
+}
+
+em, i {
+  color: white;  
 }
 
 .mleft30 {
