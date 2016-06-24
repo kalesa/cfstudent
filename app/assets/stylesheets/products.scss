@@ -4,6 +4,7 @@
 
 h2 {
   color: #FF6347;
+  text-align: left;
 }
 
 h3 {
@@ -14,7 +15,7 @@ h3 {
 
 h4 {
   color: #FF6347;
-  text-align: center;
+  text-align: left;
   font-size: 16px;
 }
 
@@ -31,6 +32,7 @@ h4 {
 
 .form-group label {
   font-size: 15px;
+  text-align: left;
 }
 
 label {
@@ -45,8 +47,16 @@ em, i {
   color: white;  
 }
 
-.mleft30 {
+#mleft30 {
   margin-left: 30px;
+}
+
+.field {
+  text-align:left;  
+}
+
+.form-group {
+  text-align:left;  
 }
 
 #container_product {
