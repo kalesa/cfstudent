@@ -1,10 +1,9 @@
-<p id="notice"><%= notice %></p>
+<!--<p id="notice"><%= notice %></p>-->
 
   <div class="container" id="container_product">
 
     <h1>Product listing</h1>
-      <button type="button" class="btn btn-default">
-        <%= link_to 'New Product', new_product_path %></button> 
+      <button type="button" class="btn btn-default"><%= link_to 'New Product', new_product_path %></button> 
 
     <div class="row">
       <%= render @products %>
