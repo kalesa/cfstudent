@@ -16,21 +16,20 @@
 
 <body>
 
-<div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+  <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
     <div class="container">
-        <div class="navbar-header">
+      <div class="navbar-header">
         <a class="navbar-brand" href="/">
         <!--<%= image_tag("iza_logo.jpg", class: "img-responsive my-image", size:"30x30") %>-->Iza Bike
         </a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
-              <span class="sr-only">Toggle navigation</span>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+            <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
         </div><!--END navbar header-->
-        <div class="collapse navbar-collapse navbar-menubuilder">
- 
+          <div class="collapse navbar-collapse navbar-menubuilder">
             <ul class="nav navbar-nav navbar-right">
               <li><%= link_to 'Home', root_path %></li>
               <li><%= link_to 'About', static_pages_about_path %></li>
@@ -38,31 +37,32 @@
               <li><%= link_to 'Contact', static_pages_contact_path %></li>
               <li>
                 <% if user_signed_in? %>
-                <%= link_to 'Edit Profile', edit_user_path(current_user) %> 
-                <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                  <%= link_to 'Edit Profile', edit_user_path(current_user) %> 
+                  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
                 <% else %>
-                <%= link_to('Signup', new_user_registration_path) %> 
-                <%= link_to('Login', new_user_session_path) %>
+                  <%= link_to('Sign-up', new_user_registration_path) %> 
+                  <%= link_to('Log-in', new_user_session_path) %>
                 <% end %>
               </li>
-              <!--<li><%= link_to 'Edit Profile', users_path %></li>-->
             </ul><!--END navbar right-->
 
-    <%= form_tag("/products", method: "get", class: "navbar-form navbar-right") do %>
-    <div class="form-group">
-      <%= label_tag(:q, "") %>
-      <%= text_field_tag(:q, "", placeholder: "Search", class: "form-control") %>
-      <%= submit_tag("Search", class: "btn btn-default") %>
-    </div>
+      <%= form_tag("/products", method: "get", class: "navbar-form navbar-right") do %>
+      <div class="form-group">
+        <%= label_tag(:q, "") %>
+        <%= text_field_tag(:q, "", placeholder: "Search", class: "form-control") %>
+        <%= submit_tag("Search", class: "btn btn-default") %>
+      </div>
+
     <% end %>
 
-        </div><!--END collapse navbar-->
+      </div><!--END collapse navbar-->
     </div><!--END container-->
-</div><!--END bootstrap menu-->
+  </div><!--END bootstrap menu-->
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-<%= yield %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+  <%= yield %>
 
 <footer class="footer">
   <p>&copy; 2016 Iza Bike</p>
