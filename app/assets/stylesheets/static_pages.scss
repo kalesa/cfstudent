@@ -18,7 +18,20 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
-  
+
+/**** JUMBOTRON ****/ 
+
+.jumbotron {
+  background-color: white;
+  background-size: cover;
+  color: #FF6347;
+}
+.jumbotron p {
+  color: black;
+}
+
+/**** END JUMBOTRON ****/
+
 h1 {
   color: #FF6347;
 }
@@ -31,6 +44,8 @@ p {
 a:visited {
   color: #FF6347;
 }
+
+/**** NAVBAR ****/
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
   color: rgba(230, 39, 57, 1);
@@ -90,6 +105,8 @@ a.navbar-brand {
   background-color: #e1e8f0;
 }
 
+/**** END NAVBAR ****/
+
 input.btn.btn-default {
   color: #e62739;
   background-color: #e1e8f0;
@@ -98,6 +115,8 @@ input.btn.btn-default {
 .panel-body p {
   color: #FF6347;
 }
+
+/**** FOOTER ****/
 
 .footer {
   font-size: 15px;
@@ -115,3 +134,5 @@ input.btn.btn-default {
   margin-top: .5cm;
   color: #e62739;
 }
+
+/**** END FOOTER ****/

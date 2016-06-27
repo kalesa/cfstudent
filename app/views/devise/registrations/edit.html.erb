@@ -5,7 +5,7 @@
     <%= devise_error_messages! %>
 
   <div class="row">
-    <div class='col-xs-6 col-md-4'>
+    <div class='col-md-6 col-md-4 text-left'>
       <div class="field">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'Enter email address' %>
@@ -40,8 +40,7 @@
       <p>Cancel my account</p>
       <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class:"btn btn-primary"  %></p>
 
-      <button type="button" class="btn btn-default"><%= link_to "Back", :back %></button>
-
     </div><!--END col-xs-6 col-md-4-->
   </div><!--END row-->
+      <button type="button" class="btn btn-default"><%= link_to "Back", :back %></button>
 </div><!--END container-->

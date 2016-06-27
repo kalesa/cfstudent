@@ -1,14 +1,17 @@
-<header>
- 
-  <h1>Iza Bike</h1>
-    <p>The date and time is <%= Time.now.strftime("%d %B, %Y, %I:%M:%S %p") %></p>
-
+<div class="jumbotron">
+  <div class="container">
+    <h1>Iza Bike</h1>
+      <p>When you buy any of our bikes, you help our community.</p>
+      <p>The date and time is <%= Time.now.strftime("%d %B, %Y, %I:%M:%S %p") %></p>
+  </div><!--END container-->
+</div><!--END jumbotron-->
 <%# test_variable = 42 %>
 <%#= test_variable %>
-  <h1>Welcome!</h1>
-  <h2>We are here to provide you with the best sources for used bikes in Berlin.</h2>
-  <%= image_tag("iza_logo.jpg", class: "img-responsive my-image") %>
+  <!--<h1>Welcome!</h1>
+  <h2>We are here to provide you with the best sources for used bikes in Berlin.</h2>-->
+  <%= image_tag("iza_logo.jpg", class: "img-responsive my-image", size:"500x500") %>
 
- <%= yield %>
-</header><!--END container-->
+    <%= yield %>
+  
+
 
