@@ -47,9 +47,22 @@ em, i {
   color: white;  
 }
 
+/**** SHOW PAGE ****/
 #mleft30 {
   margin-left: 30px;
 }
+
+.thumbnail {
+  background-color: #f2b632;
+}
+
+#show_product {
+  color: black;
+  text-align: left;
+  font-size: 14px;
+}
+
+/**** END SHOW PAGE ****/
 
 .field {
   text-align:left;  
@@ -66,8 +79,7 @@ em, i {
 #product_description,
 #product_color, 
 #product_price, 
-#link_product,
-#show_product {
+#link_product {
   text-align: left;
   font-size: 14px;
   color: white;
