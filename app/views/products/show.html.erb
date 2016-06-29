@@ -33,10 +33,11 @@
         </p>
 
       </div><!--END thumbnail-->
+        <%= render partial: 'new_comment' %> 
+        <%= render partial: 'comments' %>
     </div><!--END col-sm-6 col-md-4-->
   </div><!--END row-->
 </div><!--END container-->
-
 
   <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_product_path(@product) %></button> |
   <button type="button" class="btn btn-default"><%= link_to 'Back', products_path %></button>
