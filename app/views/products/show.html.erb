@@ -18,9 +18,9 @@
           <strong>Color:</strong>
           <%= @product.color %>
         </p>
-
+       
         <p>
-          <%= image_tag @product.image_url, class: "img-responsive product-img" %>
+          <%= image_tag @product.image_url, class: "img-responsive product-img, img-rounded" %>
         </p>
 
         <p id="show_product">
@@ -28,10 +28,15 @@
           <%= @product.price %>
         </p>
 
+        <p>Average Rating: 
+          <div class="rated" data-score="<%= @product.average_rating %>"></div> 
+        </p>
+
       </div><!--END thumbnail-->
     </div><!--END col-sm-6 col-md-4-->
   </div><!--END row-->
 </div><!--END container-->
+
 
   <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_product_path(@product) %></button> |
   <button type="button" class="btn btn-default"><%= link_to 'Back', products_path %></button>

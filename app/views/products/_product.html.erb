@@ -3,7 +3,7 @@
   <% @products.each do |product| %>
 
   <div class="col-sm-6 col-md-4">
-    <%= image_tag(product.image_url, class: "img-responsive product-img") %>
+    <%= image_tag(product.image_url, class: "img-responsive product-img img-rounded") %>
       <h3><strong><%= product.name %></strong></h3>
         <p id="product_description"><%= product.description %></p>
         <p id="product_color">Color: <%= product.color %></p>
