@@ -36,6 +36,8 @@
         <%= render partial: 'new_comment' %> 
         <%= render partial: 'comments' %>
 
+        <%= will_paginate @comments %>
+
     </div><!--END col-sm-6 col-md-4-->
   </div><!--END row-->
 </div><!--END container-->
