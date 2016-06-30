@@ -103,6 +103,7 @@ em, i {
 p#notice {
   color: #FF6347;
 }
+/****BTN****/
 
 .btn-primary {
   color: #FF6347;
@@ -113,6 +114,11 @@ p#notice {
 .btn-primary:hover {
   background: #33a6cc;
 }
+
+.btn.btn-default {
+  margin-bottom: .5cm;
+}
+/****BTN END****/
 
 .a:visited {
   color: white;

@@ -19,13 +19,13 @@
           <%= @product.color %>
         </p>
        
-        <p>
-          <%= image_tag @product.image_url, class: "img-responsive product-img, img-rounded" %>
-        </p>
-
         <p id="show_product">
           <strong>Price:</strong>
           <%= @product.price %>
+        </p>
+
+        <p>
+          <%= image_tag @product.image_url, class: "img-responsive product-img, img-rounded" %>
         </p>
 
         <p>Average Rating: 
@@ -35,6 +35,7 @@
       </div><!--END thumbnail-->
         <%= render partial: 'new_comment' %> 
         <%= render partial: 'comments' %>
+
     </div><!--END col-sm-6 col-md-4-->
   </div><!--END row-->
 </div><!--END container-->
