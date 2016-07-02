@@ -66,6 +66,14 @@ em, i {
   font-size: 14px;
 }
 
+.next_page,
+.previous_page.disabled {
+  color: #FF6347;
+}
+
+.pagination a {
+  color: white;
+}
 /**** END SHOW PAGE ****/
 
 .field {

@@ -10,7 +10,7 @@ class ProductsController < ApplicationController
       like_operator = Rails.env.production? ? 'ilike' : 'like'
       @products = Product.where("name #{like_operator} ?", "%#{search_term}%")
     else
-      @products = Product.all
+      @products = Product.all.paginate(:page => params[:page], :per_page => 10)
     end
   end
 
