@@ -7,6 +7,6 @@ class Product < ActiveRecord::Base
   end
 
   validates :name, presence: true
-  validates :rating, numericality: { only_decimal: true }
+  validates :price, numericality: { only_decimal: true }
   
 end
