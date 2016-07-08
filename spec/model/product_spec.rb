@@ -1,6 +1,7 @@
 require 'rails_helper'
   describe Product do
     before do
+      @product = FactoryGirl.create(:product)
       @product = Product.create!(name: "race bike", price: 1000)
       @user = User.create!(email: "iza_abao@yahoo.com", password: "Maharlika0")
       @product.comments.create!(rating: 1, user: @user, body: "Stable at speed and over rough stuff")
@@ -16,3 +17,5 @@ require 'rails_helper'
       expect(Product.new(description: " Nice bike ")).not_to be_valid
     end
 end
+
+
