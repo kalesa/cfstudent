@@ -4,5 +4,3 @@ FactoryGirl.define do
     price 1000  
   end
 end
-
-@product = FactoryGirl.create(:product, name: 'My Name', price: 500)

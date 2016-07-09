@@ -1,12 +1,11 @@
 require 'rails_helper'
   describe Product do
     before do
+      @user = FactoryGirl.create(:user)
       @product = FactoryGirl.create(:product)
-      @product = Product.create!(name: "race bike", price: 1000)
-      @user = User.create!(email: "iza_abao@yahoo.com", password: "Maharlika0")
-      @product.comments.create!(rating: 1, user: @user, body: "Stable at speed and over rough stuff")
-      @product.comments.create!(rating: 3, user: @user, body: "Latest trail bike is one to watch")
-      @product.comments.create!(rating: 5, user: @user, body: "Better brakes")
+      FactoryGirl.create(:comment, rating: 1, user: @user, product: @product)
+      FactoryGirl.create(:comment, rating: 3, user: @user, product: @product)
+      FactoryGirl.create(:comment, rating: 5, user: @user, product: @product)
     end
 
     it "returns the average rating of all comments" do
@@ -17,5 +16,3 @@ require 'rails_helper'
       expect(Product.new(description: " Nice bike ")).not_to be_valid
     end
 end
-
-
