@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :comments
   end
   resources :users
+  
   #get 'about', to: 'static_pages#about'
   #get 'contact', to: 'static_pages#contact'
   get 'static_pages/about'
@@ -12,7 +13,7 @@ Rails.application.routes.draw do
   get 'static_pages/index'
   
   post 'static_pages/thank_you'
-  
+
   #get 'static_pages/landing_page'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -22,7 +23,8 @@ Rails.application.routes.draw do
   root 'static_pages#landing_page'
 
   resources :orders, only: [:index, :show, :create, :destroy]
-
+  resources :payments, only: [:create]
+  post 'payments/create'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
