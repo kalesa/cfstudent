@@ -12,6 +12,7 @@ class ProductsController < ApplicationController
     else
       @products = Product.all.paginate(:page => params[:page], :per_page => 10)
     end
+    logger.debug 'HELLO!! I AM A DEBUGGING STATEMENT.'
   end
 
   # GET /products/1
