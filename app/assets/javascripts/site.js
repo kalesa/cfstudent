@@ -6,5 +6,9 @@ $(document).on('ready page:load', function(){
         return $(this).attr('data-score');
       }
     });
-    $('.img-zoom').elevateZoom({easing : true});
+    $('.img-zoom').elevateZoom({
+  zoomType        : "lens",
+  lensShape : "round",
+  lensSize    : 200
+});
 });
