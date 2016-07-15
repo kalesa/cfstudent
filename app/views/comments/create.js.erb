@@ -1,25 +1,4 @@
-//$("#new_comment").html("Thank you for your review!");
-//$('.product-reviews').prepend("<%= j render @comment %>");
-
-//$('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
-//$('.rated').attr('data-score', '<%= @product.average_rating %>');
-//$('.rated').raty({ path: '/assets',
-  //readOnly: true,
-  //score: function() {
-    //return $(this).attr('data-score');
-  //}
-//});
-
 $("#add_review").html("<h4>Thank you for your review!</h4>");
 $('.product-reviews').prepend("<%= j render @comment %>");
 $('.rated').attr('data-score', '<%= @product.average_rating %>');
 rating();
-function rating() {
-  $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
-
-  $('.rated').raty({ path: '/assets',
-    readOnly: true,
-    score: function() {
-    return $(this).attr('data-score');}
-  });
-}
