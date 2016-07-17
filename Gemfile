@@ -25,6 +25,7 @@ gem 'cancancan'
 gem 'will_paginate', '~> 3.1.0'
 gem 'stripe'
 gem "brakeman", :require => false
+gem 'angularjs-rails'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views

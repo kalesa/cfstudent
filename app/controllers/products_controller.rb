@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-
+  respond_to :json, :html
   # GET /products
   # GET /products.json
   def index
@@ -13,6 +13,7 @@ class ProductsController < ApplicationController
       @products = Product.all.paginate(:page => params[:page], :per_page => 10)
     end
     #logger.debug 'HELLO!! I AM A DEBUGGING STATEMENT.'
+    respond_with @products
   end
 
   # GET /products/1
