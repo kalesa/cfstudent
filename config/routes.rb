@@ -8,9 +8,10 @@ Rails.application.routes.draw do
   
   #get 'about', to: 'static_pages#about'
   #get 'contact', to: 'static_pages#contact'
+  get 'static_pages/index'
   get 'static_pages/about'
   get 'static_pages/contact'
-  get 'static_pages/index'
+  get 'static_pages/orders'
   
   post 'static_pages/thank_you'
 

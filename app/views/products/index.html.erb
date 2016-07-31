@@ -1,12 +1,13 @@
 <!--<p id="notice"><%= notice %></p>-->
 <div class="container" id="container_product">
-
   <h1>Product listing</h1>
     <button type="button" class="btn btn-default"><%= link_to 'New Product', new_product_path %></button> 
 
     <div class='row'>
       <% cache(cache_key_for_products) do %>
+    <div class = "sort_paginate_ajax">
         <%= render @products %> 
+    </div>
       <% end %>      
     </div><!--END row-->
 </div>
