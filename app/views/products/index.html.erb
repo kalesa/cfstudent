@@ -5,9 +5,7 @@
 
     <div class='row'>
       <% cache(cache_key_for_products) do %>
-    <div class = "sort_paginate_ajax">
         <%= render @products %> 
-    </div>
       <% end %>      
     </div><!--END row-->
 </div>
