@@ -1,6 +1,6 @@
 var app = angular.module('shop', ['ngResource']);//we are going to use dependency injection to add the module to our app
 
-$(document).on('ready page:load', function() {
+$(document).on('turbolinks:load', function() {
   angular.bootstrap(document.body, ['shop'])
 });
 
