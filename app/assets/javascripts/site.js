@@ -1,5 +1,5 @@
 $(document).on('turbolinks:load', function() {
-    rating();
+    refreshRating();
 
     $('.img-zoom').elevateZoom({
       zoomType: "lens", 
@@ -8,7 +8,7 @@ $(document).on('turbolinks:load', function() {
     });
 });
 
-function rating() {
+function refreshRating () {
   $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
 
   $('.rated').raty({ path: '/assets',
