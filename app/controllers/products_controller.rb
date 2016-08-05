@@ -3,17 +3,16 @@ class ProductsController < ApplicationController
   respond_to :json, :html
   # GET /products
   # GET /products.json
-  def index
+ 
+ def index
     if params[:q]
       search_term = params[:q]
-      #return our filtered list here
       like_operator = Rails.env.production? ? 'ilike' : 'like'
       @products = Product.where("name #{like_operator} ?", "%#{search_term}%")
     else
-      @products = Product.all.paginate(:page => params[:page], :per_page => 10)
+      @products = Product.all
     end
-    #logger.debug 'HELLO!! I AM A DEBUGGING STATEMENT.'
-    respond_with @products
+    @products = @products.paginate(:page => params[:page], :per_page => 10)
   end
 
   # GET /products/1
