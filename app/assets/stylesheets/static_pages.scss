@@ -104,10 +104,11 @@ a.navbar-brand {
   background-color: #e62739;
 }
 
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+#navbar.navbar-default .navbar-toggle:hover .icon-bar,
+#navbar.navbar-default .navbar-toggle:focus .icon-bar {
   background-color: #e1e8f0;
 }
+
 /**** END NAVBAR ****/
 
 input.btn.btn-default {
