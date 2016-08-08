@@ -26,6 +26,10 @@ Rails.application.routes.draw do
   resources :orders, only: [:index, :show, :create, :destroy]
   resources :payments, only: [:create]
   post 'payments/create'
+
+  #post '/payments/create', to: 'payments#create'
+  #get 'payments/payment_thank_you', to: 'payments#payment_thank_you'
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
